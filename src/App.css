@@ -1,0 +1,167 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, rgb(236, 245, 196), rgb(191, 236, 225));
+}
+
+.main-heading {
+  text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  gap: 10px;
+}
+
+.input-form {
+  padding: 10px;
+  border: 3px solid #61ce82;
+  background-color: white;
+  border-radius: 10px;
+  height: max-content;
+}
+
+.input-wrapper {
+  margin-bottom: 12px;
+}
+
+.input-title {
+  font-size: 13px;
+  font-weight: 500;
+  font-family: Courier, monospace;
+  margin-bottom: 3px;
+}
+
+input {
+  outline: none;
+  color: #5a5a5a;
+  border-radius: 5px;
+  border: 1px solid #9e9d9d;
+  padding: 5px;
+  font-size: 12px;
+  font-style: italic;
+  width: 300px;
+}
+
+input:focus {
+  outline: 1px solid #02d472;
+}
+
+.save-button {
+  background: #222222;
+  border: 3px solid #222222;
+  padding: 3px;
+  color: white;
+  font-weight: 550;
+  border-radius: 5px;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.close-button {
+  background: #e03b3b;
+  border: 3px solid #e03b3b;
+  color: white;
+  font-weight: 550;
+  padding: 3px;
+  border-radius: 5px;
+  font-family:Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.error-msg {
+  margin-top: 2px;
+  color: #e03b3b;
+  font-size: 12px;
+}
+
+.contact-list{
+  padding: 10px;
+  border: 3px solid #61ce82;
+  background-color: white;
+  border-radius: 10px;
+  flex: 1.5;
+}
+
+.search {
+  border-radius: 20px;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+}
+
+.contacts-table {
+  min-height: 400px;
+  overflow: auto;
+  max-height: 500px;
+  overflow-x: auto;
+}
+
+.contact {
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(190, 190, 190);
+  align-items: center;
+  padding: 8px;
+}
+.contact:hover {
+  background: rgb(233, 255, 213);
+  border-radius: 5px;
+} 
+
+.contact:not(:first-child) {
+  padding-top: 10px;
+}
+
+.contact:last-child {
+  border: none;
+}
+
+.contact-info {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.delete-button {
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+  background: transparent;
+}
+
+.delete-button:hover {
+  background-color: #e03b3b;
+  border-radius: 5px;
+  svg {
+    fill: white;
+  }
+}
+
+.contact-details {
+  padding: 10px;
+  border: 3px solid #61ce82;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+  height: max-content;
+  align-items: start;
+}
+
+
+
+
+
+
+
